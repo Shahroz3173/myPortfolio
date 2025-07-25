@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@magicui/core@latest/dist/index.umd.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>    
+    <!-- NAVBAR STARTS HERE -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-10 text-white">
+        <nav class="flex justify-between my-container h-24 items-center ">
+            <!-- LOGO -->
+            <a href="#" class="logo text-3xl font-bold">Shahroz Ali.</a>
+
+            <!-- DESKTOP MENU -->
+
+            <ul class="md:flex items-center gap-14 hidden ">
+                <li>
+                    <a href="#home" class="uppercase text-[15px] hover:text-yellow-400">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="uppercase text-[15px] hover:text-yellow-400">About</a>
+                </li>
+                <li>
+                    <a href="#whatido" class="uppercase text-[15px] hover:text-yellow-400">what i do</a>
+                </li>
+                <li>
+                    <a href="#certificates" class="uppercase text-[15px] hover:text-yellow-400">certificates</a>
+                </li>
+                <li>
+                    <a href="#Projects" class="uppercase text-[15px] hover:text-yellow-400">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="uppercase text-[15px] hover:text-yellow-400">contact</a>
+                </li>
+            </ul>
+
+            <!-- HAMBURGER -->
+            <a href="#" id="burger" class="text-2xl md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            
+
+
+
+
+        </nav>
+
+    </header>
+
+    <!-- mobile menu -->
+     <ul id="menu" class="flex flex-col item-center justify-center items-center gap-14 md:hidden absolute left-0 top-0 bottom-0 bg-white w-60 -translate-x-full transition-transform-300">
+                <li>
+                    <a href="#home" class="uppercase text-[13px] hover:text-yellow-400">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="uppercase text-[13px] hover:text-yellow-400">About</a>
+                </li>
+                <li>
+                    <a href="#whatido" class="uppercase text-[13px] hover:text-yellow-400">what i do</a>
+                </li>
+                <li>
+                    <a href="#certificates" class="uppercase text-[13px] hover:text-yellow-400">certificates</a>
+                </li>
+                <li>
+                    <a href="#Projects" class="uppercase text-[13px] hover:text-yellow-400">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="uppercase text-[13px]">contact</a>
+                </li>
+            </ul>
+
+    <!-- SECTION STARTS HERE -->
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Video background -->
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-2]">
+        <source src="assets/bg-video.mp4 " type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Blur overlay -->
+    <div class="absolute top-0 left-0 w-full h-full backdrop-blur-[1px] bg-black/30 z-[-1]"></div>
+
+    <!-- Content overlay -->
+    <div class="my-container z-10 text-center text-white">
+        <h1 id="typing" class="text-7xl md:text-8xl font-semibold tracking-tighter h-30"></h1>
+
+        <!-- Social Icons -->
+        <ul class="flex items-center justify-center gap-8 mt-6">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61557192800412" class="text-white text-xl hover:text-gray-300">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Shahroz3173" class="text-white text-xl hover:text-gray-300">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/shahrozali011?igsh=ZzQyeXBicWlyMDM0" class="text-white text-xl hover:text-gray-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@ShahrozAl-gc6jq" class="text-white text-xl hover:text-gray-300">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:work.shahroz.ali005@gmail.com" class="text-white text-xl hover:text-gray-300">
+                    <i class="fa-brands fa-google-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+        <!-- About -->
+        <section>
+            <div id="about" class="my-container sections-pb flex md:flex-row flex-col items-center gap-10">
+                <img src="assets/profile.jpg" class="w-full md:w-1/3">
+                <div>
+                    <h2 class="text-neutral-800 text-4xl/12 md:text-5xl/16 md:max-w-xl">I'm Shahroz Ali, Java backend Developer from khatima,Uttarakhand,india.</h2>
+                    <p class="text-grey-500 mt-8 mb-15 text-sm/7 md:text-base/9">
+                        Hi, I’m a passionate Java backend Developer from Khatima, Uttarakhand, India. I specialize in building dynamic, user-friendly, and scalable web applications. With a strong foundation in Java, HTML, CSS, Tailwind, JavaScript, and backend technologies, I love transforming ideas into real-world solutions.
+
+
+                        
+                    </p>
+
+                   
+                   
+                    <a href="#" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Download Resume</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- what i do section -->
+
+        <section id="whatido" class="bg-gray-100">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800 ">
+                    What i do 
+                </h3>
+                <div class="flex md:flex-row flex-col mt-10 gap-10">
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold">UI/UX Design</h5>
+                        <p class="text-grey-400 text-sm">
+                            I create engaging and user-centric UI/UX designs, combining creativity and functionality. My experience in multiple hackathons has sharpened my ability to deliver intuitive, visually appealing, and practical digital experiences.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold">Java backend</h5>
+                        <p class="text-grey-400 text-sm">
+                            I develop robust and scalable backend systems using Java, focusing on performance, security, and clean architecture. My experience spans building APIs, managing databases, and creating reliable server-side solutions for real-world application.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-film text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold">Photographer/Video Editor</h5>
+                        <p class="text-grey-400 text-sm">
+                            With over 2 years of experience as a photographer and videographer at my college sports club, I specialize in capturing moments and editing videos with sharp, creative, and professional-level skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent work section certificates -->
+
+        <section id="certificates" >
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Certificates</h3>
+                <div class="flex md:flex-row flex-col gap-14 mt-14">
+                    <a href="#" class="hover:-translate-y-3 transition:transform duration-300">
+                        <img src="assets/Certificate1.jpg" class="h-64 object-cover">
+                    </a>
+                    <a href="#" class="hover:-translate-y-3 transition:transform duration-300 ">
+                        <img src="assets/Certificate2.jpg" class="h-64 object-cover">
+                    </a>
+                    <a href="#" class="hover:-translate-y-3 transition:transform duration-300">
+                        <img src="assets/Certificate3.jpg" class="h-64 object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- blogs section/projects   -->
+
+        <section id="Projects" class="bg-gray-100">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Projects</h3>
+
+                <div class="grid md:grid-cols-3 gap-10 mt-10 ">
+                    <div>
+                        <img src="assets/myproject1_resized.png ">
+                        <h4 class="text-xl text-neutral-800 font-semibold mt-8 uppercase">Team Project: Safeguarding Rivers with AI & Real-Time Monitoring</h4>
+                        <p class="text-gray-400 text-sm/7 mt-">
+                           A smart monitoring system using AI to track river pollution in real time. Built with HTML, CSS, Tailwind, and JavaScript for a responsive and interactive dashboard.</p>
+                        <div class=" mt-10">
+                            <a href="project1.html " class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/food1.png">
+                        <h4 class="text-xl text-neutral-800 font-semibold mt-8 uppercase">Team Project: Restaurant Management System</h4>
+                        <p class="text-gray-400 text-sm/7 mt-7">
+                            A web-based system to manage restaurant operations efficiently. It allows users to place orders, book tables, check availability, and manage dine-in services. Built using modern frontend technologies.
+
+
+
+                        </p>
+                        <div class="mt-10">
+                            <a href="project2.html " class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/myproject3.png">
+                        <h4 class="text-xl text-neutral-800 font-semibold mt-8 uppercase ">Solo Project: Roommate Expense Splitter</h4>
+                        <p class="text-gray-400 text-sm/7 mt-7">
+                            A simple and efficient tool to split expenses among roommates. Tracks shared costs and calculates individual shares. Built to reduce confusion and make cost-sharing fair and easy.
+
+                        </p>
+                        <div class="mt-10">
+                            <a href="project3.html" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- contact us  -->
+
+        <section id="contact" >
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Contact Me</h3>
+                <form>
+                    <div class="  md:flex-row flex-col flex mt-10 gap-10">
+                        <input type="text" name="name" placeholder="Name" autocomplete="off" class=" field flex-1 border-b-2 border-grey-100 py-3 placeholder-grey-500 text-sm">
+                        <input type="text" name="number" placeholder="Number" class="field flex-1 border-b-2 border-grey-100 py-3 placeholder-grey-500 text-sm">
+                    </div>
+                    <div class="field md:flex-row flex-col flex mt-10 gap-10">
+                        <input type="email" name="email" placeholder="Email" autocomplete="off" class="field flex-1 border-b-2 border-grey-100 py-3 placeholder-grey-500 text-sm">
+                        <input type="text" name="subject" placeholder="Subject" class="field flex-1 border-b-2 border-grey-100 py-3 placeholder-grey-500 text-sm">
+                    </div>
+                    <div class="mt-10">
+                        <textarea name="message" placeholder="Message" class="field resize-none w-full h-32 border-b-2 border-grey-200 placeholder-grey-500 text-sm"></textarea>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#"class="field bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Send Message</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER STARS HERE -->
+
+    <footer class=" bg-gray-100">
+        <div class="  flex flex-col justify-center items-center py-15 text-center ">
+
+
+
+            <ul class="flex gap-5">
+                <li class="h-10 w-10 border-2 border-grey-200 rounded-full leading-10 hover:text-gray-300 ">
+                    <a href="https://www.facebook.com/profile.php?id=61557192800412"class="text-neutral-800 text-xl">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="h-10 w-10 border-2 border-grey-200 md:flex-row flex-col rounded-full leading-10 hover:text-gray-300">
+                    <a href="https://github.com/Shahroz3173"class="text-neutral-800 text-xl">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="h-10 w-10 border-2 border-grey-200 rounded-full leading-10 hover:text-gray-300">
+                    <a href="https://www.instagram.com/shahrozali011?igsh=ZzQyeXBicWlyMDM0"class="text-neutral-800 text-xl">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="h-10 w-10 border-2 border-grey-200 rounded-full leading-10 hover:text-gray-300 ">
+                    <a href="https://www.youtube.com/@ShahrozAl-gc6jq"class="text-neutral-800 text-xl">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="h-10 w-10 border-2 border-grey-200 rounded-full leading-10 hover:text-gray-300 ">
+                    <a href="mailto:work.shahroz.ali005@gmail.com"class="text-neutral-800 text-xl ">
+                        <i class="fa-brands fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mt-5">
+                <p class="text-sm text-gray-500 ">
+                    &copy;2025 Shahroz all right reserved.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
+
+<!-- hover:border-neutral-800 transition-all duration-300 here in this code a new problem is happening now thw projet section is not even the readme div and the para tag is not aligned make the align tell me i wii do it  -->
